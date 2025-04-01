@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById(sectionId).style.display = "block";
     }
 
-    // Pokazanie domyślnej sekcji
     showSection("about");
 
-    // Globalna funkcja do obsługi kliknięć
     window.showSection = showSection;
 });

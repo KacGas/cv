@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
+
+    <!-- NAVBAR -->
     <nav>
         <ul>
             <li><a href="#about" onclick="showSection('about')">About Me</a></li>
@@ -17,72 +21,253 @@
             <li class="dropdown">
                 <a href="#projects" class="dropbtn">Projects</a>
                 <div class="dropdown-content">
-                    <a href="#project1" onclick="showSection('project1')">Project 1</a>
-                    <a href="#project2" onclick="showSection('project2')">Project 2</a>
-                    <a href="#project3" onclick="showSection('project3')">Project 3</a>
+                    <a href="#project1" onclick="showSection('project1')">Blog website</a>
+                    <a href="#project2" onclick="showSection('project2')">Test-Solving Page</a>
+                    <a href="#project3" onclick="showSection('project3')">Panel for Movies</a>
+                    <a href="#project4" onclick="showSection('project4')">Online Store</a>
                 </div>
             </li>
         </ul>
     </nav>
-    
-    <section id="about" class="content-section">
-        <h2>About Me</h2>
-        <p>I am a Computer Science student with a passion for developing my skills in both programming and emerging technologies. 
-            My experience so far includes working on Full Stack projects, where I have used technologies such as HTML, CSS, JavaScript, 
-            TypeScript, SQL and various frameworks like Angular, Bootstrap to build web applications. Additionally, I am increasingly 
-            interested in data analysis, cybersecurity and also computer networks, and I am expanding my expertise in these areas through 
-            self-driven projects and continuous learning. I am a self-motivated individual who thrives in both independent work and 
-            collaborative team environments. I am eager to continue growing and applying my knowledge in the ever-evolving tech industry.</p>
-    </section>
-    <section id="education" class="content-section">
-        <h2>Master's Degree in Computer Science (ongoing)</h2>
-        <li>Major: Computer Science</li>
-        <li>University: John Paul II Catholic University of Lublin</li>
-        <li>Expected Graduation: 2025</li>
 
-        <h2>Bachelor's Degree in Computer Science</h2>
-        <li>Major: Computer Science</li>
-        <li>Specialty: Programming and Information Processing</li>
-        <li>University: John Paul II Catholic University of Lublin</li>
-        <li>Graduated: July 2023</li>
+    <!-- SEKCJA ABOUT-ME -->
+    <section id="about" class="content-section about-me">
+        <div class="profile-container">
+            <!-- ME -->
+            <div>
+                <h2><i class="fa-solid fa-user"></i> About Me</h2>
+                <p>I am a Computer Science student with a strong passion for programming and emerging technologies. 
+                    My experience includes working on Full Stack projects, utilizing technologies such as HTML, CSS, JavaScript, 
+                    TypeScript, SQL, and frameworks like Angular and Bootstrap to develop web applications. Additionally, I have a growing 
+                    interest in data analysis, cybersecurity, and computer networks, which I continue to explore through self-driven projects and ongoing learning. 
+                    I am a highly motivated individual who thrives both independently and in collaborative team environments. 
+                    My goal is to continuously expand my expertise and apply my knowledge to real-world challenges in the ever-evolving tech industry.</p>
+        </div>
+    </div>
+    <!-- SKILL -->
+    <div class="skills-container">
+        <h2><i class="fa-solid fa-cogs"></i> Skills</h2>
+        <ul class="skills-list">
+            <li>🖥️ Full Stack Development (JavaScript, TypeScript, Angular)</li>
+            <li>🛠️ Backend & Databases (SQL, MySQL)</li>
+            <li>⚙️ Version Control & Collaboration (GitHub)</li>
+            <li>📡 Networking (Networking Basics, CCNA)</li>
+            <li>📊 Data Handling & Formats (JSON)</li>
+            <li>🎨 Web Design (HTML, CSS, Figma)</li>
+            <li>🖥️ Spring Framework (Java, Spring Boot)</li>
+            <li>🔍 Python & Data Science (Python, Pandas, NumPy, TensorFlow)</li>
+        </ul>
+    </div>
+</section>
 
-        <h2>Technical School</h2>
-        <li>Specialization: Technician - Teleinformatics</li>
+
+<!-- SEKCJA EDUKACJA -->
+<section id="education" class="content-section">
+    <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+    <div class="timeline">
+
+        <!-- ED1 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2025 (Expected)</div>
+            <div class="timeline-content">
+                <h3>Master’s in Computer Science</h3>
+                <p>John Paul II Catholic University of Lublin</p>
+            </div>
+        </div>
+
+        <!-- ED2 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <h3>Bachelor’s in Computer Science</h3>
+                <p>John Paul II Catholic University of Lublin</p>
+                <h5>Specialized in Programming and Information Processing</h5>
+            </div>
+        </div>
+    </div>
+</section>
        
+<!-- SEKCJA EXPEREINCE -->
     </section>
     <section id="experience" class="content-section">
-        <h2>September 2022 - Inf Media - Siedlce and surroundings - Internship</h2>
-        <p>I worked on designing websites using WordPress, handling individual client communications, assembling and servicing
-            computers, servers, and other IT equipment.</p>
-        <h2>May 2019 - ELMO Joint Stock Company - Siedlce and surroundings - Internship</h2>
-        <p>I interned with an Orange subcontractor, learning to design modern telecommunication networks. I gained hands-on
-            experience in network operations, configuring servers, routers, switches, and developed expertise in fiber optics,
-            including splicing and installation.</p>
+        <h2><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
+        <div class="timeline">
+
+            <!-- EXP1 -->
+            <div class="timeline-item">
+                <div class="timeline-date">2022</div>
+                <div class="timeline-content">
+                    <h3>Inf Media - Internship</h3>
+                    <p>During my internship at Inf Media, I worked on designing websites using WordPress, directly communicating with clients to understand their needs. 
+                        Additionally, I was involved in assembling and servicing computers, servers, and other IT equipment, gaining hands-on experience in hardware maintenance and troubleshooting.</p>
+        </div>
+    </div>
+
+    <!-- EXP2 -->
+    <div class="timeline-item">
+        <div class="timeline-date">2019</div>
+        <div class="timeline-content">
+            <h3>ELMO Joint Stock Company - Internship</h3>
+            <p>As an intern at ELMO, an Orange subcontractor, I learned how to design and implement modern telecommunication networks. 
+                I gained hands-on experience in network operations, configuring servers, routers, and switches. 
+                Additionally, I developed expertise in fiber optic technology, including splicing and installation.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- CERTYFIKATY -->
+<section id="certificates" class="content-section">
+    <h2><i class="fa-solid fa-certificate"></i> Certificates</h2>
+    <div class="timeline">
+
+        <!-- CER 1 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+                <a href="./stuff/Python_Essentials_2_certificate_Kacper_Gąsowski.pdf" target="_blank" class="certificate-link">Python Essentials 2</a>
+                <p>Issued by Cisco | Verified understanding of object-oriented programming, data structures, and algorithms.</p>
+
+            </div>
+        </div>
+
+                <!-- CER 2 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <a href="./stuff/Python_Essentials_1_certificate_Kacper_Gąsowski.pdf" target="_blank" class="certificate-link">Python Essentials 1</a>
+                <p>Issued by Cisco | Basics of Python programming, including syntax and key libraries.</p>
+
+            </div>
+        </div>
+
+                <!-- CER 3 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+                <a href="./stuff/CCNA_R-S-_Introduction_to_Networks_certificate_Kacper_Gąsowski.pdf" target="_blank" class="certificate-link">CCNA Routing And Switching: Introduction to Networks</a>
+                <p>Issued by Cisco | Introduction to the fundamentals of networking and network configurations.</p>
+
+            </div>
+        </div>
+
+                <!-- CER 4 -->
+        <div class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+                <a href="./stuff/CCNA_R-S-_Routing_and_Switching_Essentials_certificate_Kacper_Gąsowski.pdf" target="_blank" class="certificate-link">CCNA Routing and Switching: Routing and Switching Essentials</a>
+                <p>Issued by Cisco | Advanced networking concepts, including routing and switching fundamentals.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PROJEKTY -->
+    <section id="project1" class="content-section">
+        <h2>Blog Website</h2>
+        <p><strong>Description:</strong> This project is a blog website built using Java and Spring Boot. The primary objective is to demonstrate a modern web application utilizing Java 17.0.9 and Spring Boot 3.2.5, focusing on performance and scalability while offering a smooth user experience.</p>
+        <p><strong>Technologies Used:</strong> 
+            <ul>
+                <li><strong>Java 17.0.9:</strong> Utilized for improved performance and modern programming features.</li>
+                <li><strong>Spring Boot 3.2.5:</strong> A powerful backend framework to build a scalable and secure application.</li>
+                <li><strong>Maven:</strong> Used for dependency management, ensuring smooth integration and build processes.</li>
+                <li><strong>HTML/CSS/JavaScript:</strong> Frontend technologies used to create a responsive and interactive user interface.</li>
+            </ul>
+        </p>
+        <p><strong>Key Features:</strong></p>
+        <ul>
+            <li><strong>Single Page Application (SPA):</strong> Smooth and fast user experience without the need for page reloads, improving user engagement.</li>
+            <li><strong>Modern Java Features:</strong> Leveraging features from Java 17.0.9 for better performance, readability, and maintainability.</li>
+            <li><strong>Scalable Backend:</strong> Spring Boot is used to build a robust backend that can easily scale as the project grows.</li>
+            <li><strong>Seamless Integration:</strong> Maven ensures smooth integration and management of dependencies throughout the project lifecycle.</li>
+        </ul>
+        <p><strong>Link to Project:</strong> <a href="https://github.com/KacGas/Blog-website" class="project-link" target="_blank">GitHub Repository</a></p>
+
     </section>
 
-    <section id="certificates" class="content-section">
-        <h2>Certificates</h2>
-        <div class="certificate-list">
-            <a href="./stuff/Python_Essentials_2_certificate_Kacper_Gąsowski.pdf" target="_blank" class="certificate-link">Python Essentials 2</a>
-            <a href="./stuff/Python_Essentials_1_certificate_Kacper_Gąsowski.pdf" target="_blank" class="certificate-link">Python Essentials 1</a>
-            <a href="./stuff/CCNA_R-S-_Introduction_to_Networks_certificate_Kacper_Gąsowski.pdf" target="_blank" class="certificate-link">CCNA Routing And Switching: Introduction to Networks</a>
-            <a href="./stuff/CCNA_R-S-_Routing_and_Switching_Essentials_certificate_Kacper_Gąsowski.pdf" target="_blank" class="certificate-link">CCNA Routing and Switching: Routing and Switching Essentials</a>
-        </div>
-    </section>
-    
-    <section id="project1" class="content-section">
-        <h2>Project 1</h2>
-        <p>Details about project 1.</p>
-    </section>
+    <!-- PROJEKT 2 -->
     <section id="project2" class="content-section">
-        <h2>Project 2</h2>
-        <p>Details about project 2.</p>
+        <h2>Test-Solving Page</h2>
+    <p><strong>Description:</strong> This project is a web application that allows users to take a timed test, answer questions, navigate between questions, and submit the test upon completion. It stores results and statistics in local storage, providing a user-friendly interface for managing tests.</p>
+    <p><strong>Technologies Used:</strong>
+        <ul>
+            <li><strong>HTML:</strong> Used for the basic structure and layout of the page.</li>
+            <li><strong>TypeScript:</strong> For handling logic such as user interaction, test management, and timing.</li>
+            <li><strong>JSON:</strong> Used for loading questions and answers into the test dynamically.</li>
+        </ul>
+    </p>
+    <p><strong>Key Features:</strong>
+        <ul>
+            <li><strong>Test Navigation:</strong> Users can navigate between questions using "Next" and "Previous" buttons.</li>
+            <li><strong>Timer:</strong> A timer starts when the user clicks "Start" and tracks the time spent on each question.</li>
+            <li><strong>Mandatory Completion:</strong> The test cannot be submitted until all questions are answered.</li>
+            <li><strong>Question Mode:</strong> Once an answer is selected and the user navigates away from the question, it is locked in reading mode.</li>
+            <li><strong>Results & Statistics:</strong> Statistics, including time spent per question, are collected and stored in the browser's localStorage.</li>
+            <li><strong>JSON-Based Questions:</strong> Questions and answers are loaded dynamically from a JSON file.</li>
+        </ul>
+    </p>
+    <p><strong>Link to Project:</strong> <a href="https://github.com/KacGas/Test-Solving-Page" class="project-link" target="_blank">GitHub Repository</a></p>
     </section>
+
+    <!-- PROJEKT 3 -->
     <section id="project3" class="content-section">
-        <h2>Project 3</h2>
-        <p>Details about project 3.</p>
+        <h2>Administration Panel for Movies</h2>
+    <p><strong>Description:</strong> This project is a web application for managing movies with role-based access control. Users can view movies, while administrators can add, edit, and delete movies, as well as manage users through secure authentication and role management.</p>
+    <p><strong>Technologies Used:</strong>
+        <ul>
+            <li><strong>Java 17:</strong> Used for the backend logic, providing modern Java features for better performance and scalability.</li>
+            <li><strong>Spring Boot 3.4:</strong> Provides a robust backend framework for building secure and scalable applications.</li>
+            <li><strong>JWT Authentication:</strong> JSON Web Tokens are used for secure user authentication and session management.</li>
+            <li><strong>MySQL:</strong> Database for storing user and movie data, ensuring smooth data management and retrieval.</li>
+            <li><strong>Angular:</strong> Frontend framework for creating a dynamic and responsive user interface for managing movies and users.</li>
+        </ul>
+    </p>
+    <p><strong>Key Features:</strong>
+        <ul>
+            <li><strong>Secure Authentication:</strong> Users authenticate using JWT-based security, ensuring secure login and access.</li>
+            <li><strong>Role-Based Access Control:</strong> Admins can manage users, movies, and roles, while regular users only have viewing access.</li>
+            <li><strong>Movie Management:</strong> Admins can add, edit, or delete movies from the database.</li>
+            <li><strong>User Management:</strong> Admins can create and manage users and their roles (admin/user).</li>
+            <li><strong>REST API:</strong> The system uses a REST API to provide secure and controlled access to the movie data and user management functionalities.</li>
+        </ul>
+    </p>
+    <p><strong>Link to Project:</strong> <a href="https://github.com/KacGas/Administration-panel" class="project-link" target="_blank">GitHub Repository</a></p>
+    </section>
+
+    <!-- PROJEKT 4 -->
+    <section id="project4" class="content-section">
+        <h2>Online Store</h2>
+    <p><strong>Description:</strong> A fully functional e-commerce platform that allows users to register, log in, browse products, add items to their cart, and complete purchases with secure authentication and order tracking. Built with Java Spring Boot and Angular, this platform integrates secure payment systems and delivery options.</p>
+    <p><strong>Technologies Used:</strong>
+        <ul>
+            <li><strong>Java Spring Boot:</strong> The backend framework for handling the business logic, managing users, products, and orders.</li>
+            <li><strong>MySQL:</strong> Database for storing product information, user profiles, orders, and payments.</li>
+            
+            
+            <li><strong>Gradle:</strong> Build automation tool used for managing dependencies and project builds.</li>
+            <li>
+                <strong>Angular:</strong> Frontend framework for building a dynamic and responsive UI for product browsing, cart management, and checkout processes.</li>
+            <li><strong>JWT Authentication:</strong> Secure login and registration process, ensuring that user data is protected.</li>
+            <li><strong>Payment Gateway Integration:</strong> Integration with payment systems for handling transactions securely.</li>
+        </ul>
+    </p>
+    <p><strong>Key Features:</strong>
+        <ul>
+            <li><strong>User Authentication:</strong> Users can securely register, log in, and update their profile using JWT-based authentication.</li>
+            <li><strong>Shopping Cart:</strong> Users can add items to their cart and manage quantities before checkout.</li>
+            <li><strong>Order Tracking:</strong> Users can track the status of their orders in real-time.</li>
+            <li><strong>Payment Methods:
+
+            </strong> Multiple secure payment methods are available for user convenience.</li>
+            <li><strong>Product Categories:</strong> Products are organized into categories for easier browsing and selection.</li>
+        </ul>
+    </p>
+    <p><strong>Link to Project:</strong> <a href="https://github.com/KacGas/Online-store" class="project-link" target="_blank">GitHub Repository</a></p>
     </section>
     
+    <!-- STOPKA -->
     <footer>
         <a href="https://www.linkedin.com/in/kacper-g%C4%85sowski-400b6a277" target="_blank">LinkedIn</a> |
         <a href="https://github.com/KacGas" target="_blank">GitHub</a> |
