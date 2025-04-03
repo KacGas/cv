@@ -76,12 +76,13 @@ nav ul li a:hover {
   margin-top: 60px;
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding-bottom: 60px;
 }
 
 /* STOPKA */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background: #344955;
   color: white;
   position: fixed;
@@ -160,6 +161,10 @@ footer a:active {
 }
 
 /* SKILL */
+.skills-container {
+  margin: 30px 0;
+}
+
 .skills-list {
   list-style: none;
   padding: 0;
@@ -171,6 +176,17 @@ footer a:active {
   border-radius: 5px;
   margin-bottom: 5px;
   background: none;
+  font-size: 18px;
+}
+
+.skill-title {
+  color: #222;
+  font-weight: bold;
+}
+
+.skill-tech {
+  color: #1abc9c;
+  font-weight: 600;
 }
 
 /* PROJEKT */
